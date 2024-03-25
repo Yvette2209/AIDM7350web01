@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FIJI</title>
+    <style>
+        .nav-bar {
+            background-color: white;
+            height: 60px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            box-shadow: 0px 0px 4px #ede3e3;
+
+        }
+
+        .nav-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-link {
+            display: inline-block;
+            font-family: "SF Compact Text Semibold", sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.85);
+            text-decoration: none;
+            margin-right: 78px;
+            transition: border-color 0.3s ease-in-out;
+            box-sizing: border-box;
+        }
+
+        .nav-link:hover {
+            border-bottom: 3px solid #326FFE;
+        }
+
+        .heart-icon {
+            width: 30px;
+            height: 28px;
+            background-image: url('https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng125f7c294381f9f3c2728ac5023109b2d61a81350afabccc4fe4c32c88190ac5');
+            background-size: cover;
+            margin-right: 10px;
+            margin-left: 30px;
+        }
+
+        .fiji-text {
+            font-family: "SF Compact Text Semibold", sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #326FFE;
+            margin-right: 88px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var navLinks = document.getElementsByClassName("nav-link");
+
+            for (var i = 0; i < navLinks.length; i++) {
+                var link = navLinks[i];
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    var targetId = this.getAttribute("href").substring(1); 
+                    var targetElement = document.getElementById(targetId); 
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: "smooth" });
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="nav-wrapper">
+            <div class="heart-icon"></div>
+            <span class="fiji-text">FIJI</span>
+            <a class="nav-link" href="#place-to-go">Place to Go</a>
+        </div>
+        <a class="nav-link" href="#things-to-do">Things to Do</a>
+        <a class="nav-link" href="#place-to-stay">Place to Stay</a>
+        <a class="nav-link" href="#things-to-know">Things to Know</a>
+    </div>
+
+    <div class="main-content">
+
+        <div id="place-to-go" class="section text-section">
+            <h2 class="title">Why Go to Fiji</h2>
+            <div class="section1">
+                <div>
+
+                    <p>
+                        With its turquoise waters, glittering sands and luxe resorts, Fiji is similar to many other
+                        tropical getaways. But Fiji differs from other island destinations in its otherworldliness. Since it's
+                        more than 1,300 miles from New Zealand's North Island in the South Pacific Ocean, Fiji affords you
+                        the delectable feeling of seclusion.
+                    </p>
+                    <p>
+                        You'll be as far from reality as possible when you're sipping Fiji Bitter beer and watching the
+                        sun dip below the horizon. Happiness comes naturally in Fiji. It's in their culture, their family,
+                        their warm Bula spirit, their fresh diet, and their stunning nature. Which kind of makes
+                        them happiness experts when it comes to creating unforgettable holiday experiences for their guests.
+                    </p>
+                    <p>
+                        Fijian customs will make you feel a million miles away: Ever tasted the dizzying kava drink? Or
+                        watched men defy fire and walk across scalding stones without burning their feet? If not, it's
+                        about time you did.
+                    </p>
+
+                </div>
+                <div class="section1-img">
+                    <img src="./image/why_go_to_fiji.jpeg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="things-to-do" class="section  text-section">
+            <h2>Things to Do in Fiji</h2>
+            <div class="content-item">
+                <div class="item-img">
+                    <img src="image/Visit_a_village.jpg" alt="">
+                </div>
+                <div class="dsc">
+                    <h3>Visit a village and experience life the Fijian way</h3>
+                    <p>
+                        Anyone who has ever pulled ashore to a Fijian island resort can testify to being greeted warmly
+                        and with welcoming songs, but to really get familiar with this beautiful place, head to a homestay or
+                        visit a village. Homestays provide an unmatchable, authentic insight into the real Fiji - you'll be
+                        living with a Fijian family, like a Fijian family.
+                        <br><br>
+                        While you're more likely to catch a meke (lively performance enacting ancient lore) at a resort
+                        than avvillage, there's a good chance you'll be treated to a slow-cooked lovo (pit oven) feast. Expect
+                        loaded plates of succulent meat and fish, plenty of local root vegetables and palusami (tinned beef 
+                        or vegetables and coconut cream wrapped in taro leaves).
+                    </p>
+                </div>
+            </div>
+            <div class="content-item">
+                <div> <img src="./image/Drink_kava.jpg" alt=""></div>
+                <div>
+                    <h3>Drink kava, Fiji's beverage of choice</h3>
+
+                    <p>
+                        From formal events to parties among friends, kava is Fiji's drink of choice. Kava (yagona) is
+                        made from pepper root ground into a fine powder and mixed with water. It's typically scooped from a large
+                        wooden bowl (tanoa) and served in a coconut shell cup (bilo).
+                        <br><br>
+                        Each Fijian community has its own etiquette and customs when it comes to drinking kava, and
+                        travelers are quickly forgiven for not hitting each cue. When in doubt, you can follow the common kava
+                        drinking customs of Fiji's capital city. When a cup is handed to you, clap before taking it with both
+                        hands.Drink the liquid in one go if you can, hand it back with both hands, clap again and say “Bula!”
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="place-to-stay" class="section pad_n text-section">
+            <h2>Best Hotels in Fiji</h2>
+            <div class="stay-content">
+                <div class="stay-item">
+                    <div class="img">
+                        <img src="./image/Sheraton_Denarau_Villas.jpg" alt="">
+
+                    </div>
+                    <p><strong>LOCATION: Nadi HOTEL CLASS: 5.0-star PROPERTY TYPE: Resort</strong></p>
+                    <h3>Sheraton Denarau Villas</h3>
+                    <p>
+                        2 outdoor pools, a full-service spa, and a golf course are available at this resort. Free WiFi
+                        in public areas and free self parking are also provided. Additionally, a restaurant, 2
+                        bars/lounges, and a 24-hour fitness center are onsite.
+                    </p>
+                </div>
+                <div class="stay-item">
+                    <div class="img">
+                        <img src="./image/Radisson_Blu_Resort .jpg" alt="">
+                    </div>
+                    <p><strong>LOCATION: Nadi HOTEL CLASS: 5.0-star PROPERTY TYPE: Resort</strong></p>
+                    <h3>Radisson Blu Resort Fiji Denarau Island</h3>
+
+                    <p>
+                        Kids can whizz down the waterslide while parents soak in a hot tub and choose from 4
+                        lagoon-style pools, including a climate-controlled pool that will either keep you warm in the tropical Fijian
+                        winter, or cool you down in the summer. There is a full menu of revitalizing treatments at the spa, and a
+                        range of international cuisine at the resort's 4 restaurants, including Fijian dishes like Kokoda.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="things-to-know" class="section text-section">
+
+            <h2>Things to Know about Fiji</h2>
+            <div class="things-img">
+                <img src="image/weather_in_fiji.png" width="100%" alt="">
+            </div>
+            <h3>Best Month to Visit</h3>
+            <p>
+                Fiji has two seasons: summer (the wet season) and winter (the dry season). The latter (generally June to
+                September) is the peak tourist season in Fiji. May and October are considered Fiji's shoulder months,
+                offering that sweet spot of fewer fellow tourists and pleasant weather. The best weather coincides with
+                higher prices and bigger crowds in Fiji, but there's never a bad time to visit - not even during cyclone
+                season. So, whether you want to lounge on a beach, sail between islands or snorkel with manta rays,
+                here's when to go to Fiji.
+            </p>
+            <div class="season-contanier">
+                <h3>How to Save Money in Fiji</h3>
+
+                <div class="season-box">
+                    <div class="season-dsc">
+                        <h4>Visit in the low season</h4>
+                        <P>
+                            So what; There might be scattered showers! Visiting between the months of November and April
+                            can save you a lot on airfare and accommodations.
+                        </P>
+                        <h4>Look for package deals</h4>
+                        <P>
+                            Your two largest expenses will be your flight and your hotel room. But you can find some
+                            great discounts if you book both at the same time.
+                        </P>
+                        <h4>Stick to one isle</h4>
+                        <P>
+                            Transportation costs for island-hopping can add up, so conserve your currency by sticking to
+                            just one of Fiji's gorgeous islands.
+                        </P>
+                    </div>
+                    <div class="">
+                        <img src="./image/save_money.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="culture-container">
+                <h3>Culture & Customs</h3>
+
+                <div class="culture-content">
+                    <div class="culture-item">
+                        <div><img src="./image/custom_01.jpg" alt=""></div>
+                        <P>
+                            Although Fiji's official language is English, you will endear yourself to the friendly
+                            Fijians by learning a few words of their native Fijian tongue. "Bula" (pronounced mboo-la) is "hello";
+                            "vinaka" (pronounced vee-nah-kah) means "thank you"; “kere kere” (kerry kerry) is “please” and "moce"
+                            (pronounced mow-they) is "goodbye." If you're staying at a resort and choose to venture into town, dress
+                            modestly. When going to a village, avoid wearing a hat, as it will insult the village's chief.
+                        </P>
+                    </div>
+                    <div class="culture-item">
+                        <div>
+                            <img src="./image/custom_02.jpg" alt="">
+                        </div>
+                        <p>
+                            There's nothing more Fijian than joining in on the country's favourite pastime: eating.
+                            Often reserved for special occasions, a communal lovo is a traditional cooking method where women prepare
+                            the food and men tend to the fire and cooking. Meat, fish and root crops like taro are cooked on
+                            white-hot stones in an underground pit covered with leaves and dirt to cook slowly for a few hours. The result
+                            is a smoky, succulent feast. Many resorts (and villages) include this method of cooking as a weekly
+                            activity that includes traditional singing and dancing.
+                        </p>
+                    </div>
+                    <div class="culture-item">
+                        <div class="culture-item-itme">
+                            <img src="./image/custom_03.jpg" alt="">
+                        </div>
+                        <P>
+                            In addition to being master navigators and sailors, many Fijians know a thing or two about
+                            getting down rivers too. Villagers in the interior of Fiji's larger islands use a raft called a bilibili
+                            made of bamboo poles lashed together with traditional rope and steered by a long bamboo pole to
+                            carry produce or go fishing. You can ride one down the Navua River near Pacific Harbour with Discover Fiji or
+                            learn to make one at the Namosi Eco Retreat in the interior of Viti Levu.
+                        </P>
+                    </div>
+
+                </div>
+
+            </div>
+
+            </p>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  background-color: #f9fafc;
+}
+
+.main-content {
+  background-color: #fff;
+  width: 1200px;
+  display: flex;
+  margin: 20px auto;
+  padding: 50px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px #ede3e3;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.title {
+  width: 1200px;
+  margin: 0 auto;
+}
+.section1 {
+  margin: auto;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.section1 > div {
+  flex: 1;
+}
+
+.section1 > div p{
+    letter-spacing: 1px;
+}
+
+.section1 > div img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.text-section {
+  background-color: white;
+  font-family: sans-serif;
+  border-radius: 20px;
+}
+.pad_n {
+  margin-top: 0px;
+}
+.text-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.content-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 40px;
+}
+.content-item div img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.stay-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  margin-top: 40px;
+}
+.stay-content .stay-item .img img {
+  width: 100%;
+  border-radius: 20px;
+}
+.stay-content .stay-item strong {
+  color: #6e7aa3;
+}
+.season-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.season-box img {
+  width: 100%;
+  border-radius: 20px;
+}
+.culture-container,
+.season-contanier {
+  margin-top: 40px;
+}
+.season-box .season-dsc {
+  padding: 0px;
+}
+
+.season-dsc h4 {
+  margin: 0;
+}
+.season-dsc p {
+  margin-top: 8px;
+}
+.culture-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.culture-content img {
+  width: 100%;
+  border-radius: 20px;
+}
